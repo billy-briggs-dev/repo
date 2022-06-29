@@ -5,8 +5,6 @@ on:
       - main
   pull_request:
 
-env:
-  NX_CLOUD_DISTRIBUTED_EXECUTION: true
 
 jobs:
   main:
@@ -15,12 +13,12 @@ jobs:
     with:
       number-of-agents: 3
       parallel-commands: |
-        NX_CLOUD_DISTRIBUTED_EXECUTION=true npx nx-cloud record -- npx nx workspace-lint
-        NX_CLOUD_DISTRIBUTED_EXECUTION=true npx nx-cloud record -- npx nx format:check
+        npx nx-cloud record -- npx nx workspace-lint
+        # npx nx-cloud record -- npx nx format:check
       parallel-commands-on-agents: |
-        NX_CLOUD_DISTRIBUTED_EXECUTION=true npx nx affected --target=lint --parallel=3
-        NX_CLOUD_DISTRIBUTED_EXECUTION=true npx nx affected --target=test --parallel=3 --ci --code-coverage
-        NX_CLOUD_DISTRIBUTED_EXECUTION=true npx nx affected --target=build --parallel=3
+        npx nx affected --target=lint --parallel=3
+        npx nx affected --target=test --parallel=3 --ci --code-coverage
+        npx nx affected --target=build --parallel=3
 
   agents:
     name: Nx Cloud - Agents
