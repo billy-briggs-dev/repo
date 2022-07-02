@@ -23,7 +23,7 @@
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
-    "@billy-briggs-dev/sonar": "^0.0.1",
+    "@billy-briggs-dev/sonar": "^0.0.2",
     "@angular-devkit/build-angular": "~14.0.0",
     "@angular-eslint/eslint-plugin": "~13.2.1",
     "@angular-eslint/eslint-plugin-template": "~13.2.1",
