@@ -4,6 +4,7 @@
   "projects": {
     "my-website": "apps/my-website",
     "my-website-e2e": "apps/my-website-e2e",
-    "shared": "libs/shared"
+    "shared": "libs/shared",
+    "sonar": "libs/sonar"
   }
 }
