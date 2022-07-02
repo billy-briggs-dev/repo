@@ -1,4 +1,11 @@
 {
+  "builders": {
+    "sonar":{
+      "implementation": "./src/executors/sonar/compat",
+      "schema": "./src/executors/sonar/schema.json",
+      "description": "Run SonarQube analysis"
+    }
+  },
   "executors": {
     "sonar": {
       "implementation": "./src/executors/sonar/executor",

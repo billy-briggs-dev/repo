@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/sonar/src",
+  "sourceRoot": "libs/sonar",
   "projectType": "library",
   "targets": {
     "build": {
@@ -8,9 +8,42 @@
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/libs/sonar",
-        "main": "libs/sonar/src/index.ts",
+        "main": "libs/sonar/index.ts",
         "tsConfig": "libs/sonar/tsconfig.lib.json",
-        "assets": ["libs/sonar/*.md"]
+        "assets": [
+          {
+            "input": "libs/sonar",
+            "glob": "**/files/**",
+            "output": "/"
+          },
+          {
+            "input": "libs/sonar",
+            "glob": "**/files/**/.gitkeep",
+            "output": "/"
+          },
+          {
+            "input": "libs/sonar",
+            "glob": "**/*.json",
+            "ignore": ["**/tsconfig*.json", "project.json"],
+            "output": "/"
+          },
+          {
+            "input": "libs/sonar",
+            "glob": "**/*.js",
+            "ignore": ["**/jest.config.js"],
+            "output": "/"
+          },
+          {
+            "input": "packages/cypress",
+            "glob": "**/*.d.ts",
+            "output": "/"
+          },
+          {
+            "input": "",
+            "glob": "LICENSE",
+            "output": "/"
+          }
+        ]
       }
     },
     "lint": {
