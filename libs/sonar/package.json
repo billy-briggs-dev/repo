@@ -1,6 +1,6 @@
 {
   "name": "@billy-briggs-dev/sonar",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "builders": "./executors.json",
   "private": false
 }

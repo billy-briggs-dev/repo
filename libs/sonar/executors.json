@@ -10,8 +10,7 @@
     "sonar": {
       "implementation": "./src/executors/sonar/executor",
       "schema": "./src/executors/sonar/schema.json",
-      "description": "Executor for running Sonar Scanner on a project",
-      "hasher": "./src/executors/sonar/hasher"
+      "description": "Executor for running Sonar Scanner on a project"
     }
   }
 }
