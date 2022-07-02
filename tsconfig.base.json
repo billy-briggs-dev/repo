@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@billy-briggs-dev/shared": ["libs/shared/src/index.ts"]
+      "@billy-briggs-dev/shared": ["libs/shared/src/index.ts"],
+      "@billy-briggs-dev/sonar": ["libs/sonar/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

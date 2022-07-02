@@ -97,6 +97,9 @@
         "jestConfig": "apps/my-website/jest.config.ts",
         "passWithNoTests": true
       }
+    },
+    "sonar": {
+      "executor": "@billy-briggs-dev/sonar:sonar"
     }
   },
   "tags": []
