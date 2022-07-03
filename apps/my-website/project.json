@@ -101,7 +101,13 @@
     "sonar": {
       "executor": "./dist/libs/sonar:sonar",
       "options": {
-        "project.settings": "./sonar-project.properties"
+        "sonar": {
+          "host": {
+            "url": "http://localhost:9000"
+          },
+          "projectKey": "my-website",
+          "projectName": "my-website"
+        }
       }
     }
   },
