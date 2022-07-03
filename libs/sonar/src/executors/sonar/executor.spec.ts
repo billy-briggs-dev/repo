@@ -1,8 +1,6 @@
-import { SonarExecutorSchema } from './schema';
-import executor, { SonarExecutorOptions } from './executor';
-import { ExecutorContext } from '@nrwl/devkit';
+import { SonarExecutorOptions } from './schema';
 
-const options: SonarExecutorSchema = {};
+// const options: SonarExecutorOptions = {};
 
 describe('Sonar Executor', () => {
   it('can run', async () => {
