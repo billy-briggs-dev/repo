@@ -99,7 +99,10 @@
       }
     },
     "sonar": {
-      "executor": "@billy-briggs-dev/sonar:sonar"
+      "executor": "./dist/libs/sonar:sonar",
+      "options": {
+        "project.settings": "./sonar-project.properties"
+      }
     }
   },
   "tags": []

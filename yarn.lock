@@ -1398,10 +1398,10 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@billy-briggs-dev/sonar@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@billy-briggs-dev/sonar/-/sonar-0.0.3.tgz#817baaef7b00f21d37a45269ea42256575b25253"
-  integrity sha512-TpkKeML0oUM+21LYpnqmAnqnzbO9H7Lc9TY9S+oeD+NLh+GnhKl/VmET24k+6IVucdenUfffvP1YUHX7qc00Qw==
+"@billy-briggs-dev/sonar@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@billy-briggs-dev/sonar/-/sonar-0.0.4.tgz#4cf9f9e3fd573f1b3d575afc2032b6cdb189d8e2"
+  integrity sha512-b7SBDXgjYRPdFBs63voOiCoRfZ/HLrNu4PS46LUaZy3JKuds3bS33dF/OwXQuwcjtCq9I9TFIgkIuM8EBBGMag==
 
 "@colors/colors@1.5.0":
   version "1.5.0"
