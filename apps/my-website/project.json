@@ -99,7 +99,7 @@
       }
     },
     "sonar": {
-      "executor": "./dist/libs/sonar:sonar",
+      "executor": "@billy-briggs-dev/sonar:sonar",
       "options": {
         "sonar": {
           "host": {
