@@ -11,6 +11,7 @@
         "main": "libs/sonar/index.ts",
         "tsConfig": "libs/sonar/tsconfig.lib.json",
         "assets": [
+          "libs/sonar/README.md",
           {
             "input": "libs/sonar",
             "glob": "**/files/**",
