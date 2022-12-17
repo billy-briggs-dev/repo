@@ -1,135 +1,137 @@
 {
+  "version": 2,
+  "outputCapture": "direct-nodejs",
   "$schema": "http://json-schema.org/schema",
   "type": "object",
   "cli": "nx",
   "properties": {
-      "project.settings": {
-          "type": "string",
-          "description": "The project settings file"
-      },
-      "sonar.host.url": {
-          "type": "string",
-          "description": "The url of the SonarQube server"
-      },
-      "sonar.projectKey": {
-          "type": "string",
-          "description": "The project key"
-      },
-      "sonar.projectName": {
-          "type": "string",
-          "description": "The project name"
-      },
-      "sonar.projectVersion": {
-          "type": "string",
-          "description": "The project version"
-      },
-      "sonar.login": {
-          "type": "string",
-          "description": "The SonarQube username"
-      },
-      "sonar.password": {
-          "type": "string",
-          "description": "The SonarQube password"
-      },
-      "sonar.ws.timeout": {
-          "type": "string",
-          "description": "The timeout for the SonarQube API"
-      },
-      "sonar.projectDescription": {
-          "type": "string",
-          "description": "The project description"
-      },
-      "sonar.links.homepage": {
-          "type": "string",
-          "description": "The project homepage"
-      },
-      "sonar.links.ci": {
-          "type": "string",
-          "description": "The project continuous integration"
-      },
-      "sonar.links.issue": {
-          "type": "string",
-          "description": "The project issue tracker"
-      },
-      "sonar.links.scm": {
-          "type": "string",
-          "description": "The project source code management"
-      },
-      "sonar.sources": {
-          "type": "string",
-          "description": "The project source directories"
-      },
-      "sonar.tests": {
-          "type": "string",
-          "description": "The project test directories"
-      },
-      "sonar.sourceEncoding": {
-          "type": "string",
-          "description": "The project source encoding"
-      },
-      "sonar.externalIssuesReportPaths": {
-          "type": "string",
-          "description": "The project external issues report paths"
-      },
-      "sonar.projectDate": {
-          "type": "string",
-          "description": "The project date"
-      },
-      "sonar.projectBaseDir": {
-          "type": "string",
-          "description": "The project base directory"
-      },
-      "sonar.working.directory": {
-          "type": "string",
-          "description": "The project working directory"
-      },
-      "sonar.scm.provider": {
-          "type": "string",
-          "description": "The project source code management provider"
-      },
-      "sonar.scm.forceReloadAll": {
-          "type": "string",
-          "description": "The project source code management force reload all"
-      },
-      "sonar.scm.exclusions.disabled": {
-          "type": "string",
-          "description": "The project source code management exclusions disabled"
-      },
-      "sonar.scm.revision": {
-          "type": "string",
-          "description": "The project source code management revision"
-      },
-      "sonar.buildString": {
-          "type": "string",
-          "description": "The project build string"
-      },
-      "sonar.newCode.referenceBranch": {
-          "type": "string",
-          "description": "The project new code reference branch"
-      },
-      "sonar.log.level": {
-          "type": "string",
-          "description": "The project log level"
-      },
-      "sonar.verbose": {
-          "type": "string",
-          "description": "The project verbose"
-      },
-      "sonar.scanner.dumpToFile": {
-          "type": "string",
-          "description": "The project scanner dump to file"
-      },
-      "sonar.scanner.metadataFilePath": {
-          "type": "string",
-          "description": "The project scanner metadata file path"
-      },
-      "sonar.qualitygate.wait": {
-          "type": "string",
-          "description": "The project qualitygate wait"
-      },
-      "sonar.qualitygate.timeout": {
-          "type": "string",
-          "description": "The project qualitygate timeout"
-      }
+    "project.settings": {
+      "type": "string",
+      "description": "The project settings file"
+    },
+    "sonar.host.url": {
+      "type": "string",
+      "description": "The url of the SonarQube server"
+    },
+    "sonar.projectKey": {
+      "type": "string",
+      "description": "The project key"
+    },
+    "sonar.projectName": {
+      "type": "string",
+      "description": "The project name"
+    },
+    "sonar.projectVersion": {
+      "type": "string",
+      "description": "The project version"
+    },
+    "sonar.login": {
+      "type": "string",
+      "description": "The SonarQube username"
+    },
+    "sonar.password": {
+      "type": "string",
+      "description": "The SonarQube password"
+    },
+    "sonar.ws.timeout": {
+      "type": "string",
+      "description": "The timeout for the SonarQube API"
+    },
+    "sonar.projectDescription": {
+      "type": "string",
+      "description": "The project description"
+    },
+    "sonar.links.homepage": {
+      "type": "string",
+      "description": "The project homepage"
+    },
+    "sonar.links.ci": {
+      "type": "string",
+      "description": "The project continuous integration"
+    },
+    "sonar.links.issue": {
+      "type": "string",
+      "description": "The project issue tracker"
+    },
+    "sonar.links.scm": {
+      "type": "string",
+      "description": "The project source code management"
+    },
+    "sonar.sources": {
+      "type": "string",
+      "description": "The project source directories"
+    },
+    "sonar.tests": {
+      "type": "string",
+      "description": "The project test directories"
+    },
+    "sonar.sourceEncoding": {
+      "type": "string",
+      "description": "The project source encoding"
+    },
+    "sonar.externalIssuesReportPaths": {
+      "type": "string",
+      "description": "The project external issues report paths"
+    },
+    "sonar.projectDate": {
+      "type": "string",
+      "description": "The project date"
+    },
+    "sonar.projectBaseDir": {
+      "type": "string",
+      "description": "The project base directory"
+    },
+    "sonar.working.directory": {
+      "type": "string",
+      "description": "The project working directory"
+    },
+    "sonar.scm.provider": {
+      "type": "string",
+      "description": "The project source code management provider"
+    },
+    "sonar.scm.forceReloadAll": {
+      "type": "string",
+      "description": "The project source code management force reload all"
+    },
+    "sonar.scm.exclusions.disabled": {
+      "type": "string",
+      "description": "The project source code management exclusions disabled"
+    },
+    "sonar.scm.revision": {
+      "type": "string",
+      "description": "The project source code management revision"
+    },
+    "sonar.buildString": {
+      "type": "string",
+      "description": "The project build string"
+    },
+    "sonar.newCode.referenceBranch": {
+      "type": "string",
+      "description": "The project new code reference branch"
+    },
+    "sonar.log.level": {
+      "type": "string",
+      "description": "The project log level"
+    },
+    "sonar.verbose": {
+      "type": "string",
+      "description": "The project verbose"
+    },
+    "sonar.scanner.dumpToFile": {
+      "type": "string",
+      "description": "The project scanner dump to file"
+    },
+    "sonar.scanner.metadataFilePath": {
+      "type": "string",
+      "description": "The project scanner metadata file path"
+    },
+    "sonar.qualitygate.wait": {
+      "type": "string",
+      "description": "The project qualitygate wait"
+    },
+    "sonar.qualitygate.timeout": {
+      "type": "string",
+      "description": "The project qualitygate timeout"
+    }
   }
 }
