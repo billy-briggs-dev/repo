@@ -10,17 +10,20 @@ def splitJobs(String target, int bins) {
     return tasks
   }
 
-  // Ensure that all bins have roughly the same number of tasks
-  def binSize = (tasks.size() + bins - 1) / bins
-  def split = []
-  def bin = []
-  for (int i = 0; i < tasks.size(); i++) {
-    bin.add(tasks[i])
-    if (bin.size() == binSize || i == tasks.size() - 1) {
-      split.add(bin)
-      bin = []
+  def taskBins = []
+  def binSize = tasks.size() / bins
+  def binStart = 0
+  def binEnd = binSize
+
+  for (int i = 0; i < bins; i++) {
+    if (i == bins - 1) {
+      binEnd = tasks.size()
     }
+
+    taskBins.add(tasks[binStart..binEnd])
+    binStart = binEnd
+    binEnd += binSize
   }
 
-  return split
+  return taskBins
 }
