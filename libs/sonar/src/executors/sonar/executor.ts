@@ -1,4 +1,4 @@
-import type { ExecutorContext } from '@nrwl/devkit';
+import type { ExecutorContext } from '@nx/devkit';
 import { exec } from 'child_process';
 import { promisify } from 'util';
 import { SonarExecutorOptions } from './schema';
@@ -6,14 +6,18 @@ import { SonarExecutorOptions } from './schema';
 export default async function sonarExecutor(
   options: SonarExecutorOptions,
   _context: ExecutorContext
-): Promise<{ success: boolean }> {  
+): Promise<{ success: boolean }> {
   if (!options?.project?.settings) {
     if (!options?.sonar?.projectKey) {
-      throw new Error('Project Key is required! Please provide a project key in the sonar properties file or in the project.json.');
+      throw new Error(
+        'Project Key is required! Please provide a project key in the sonar properties file or in the project.json.'
+      );
     }
 
-    if(!options?.sonar?.host?.url) {
-      throw new Error('Host Url is required! Please provide a host url in the sonar properties file or in the project.json.');
+    if (!options?.sonar?.host?.url) {
+      throw new Error(
+        'Host Url is required! Please provide a host url in the sonar properties file or in the project.json.'
+      );
     }
   }
 
@@ -44,9 +48,9 @@ function getPathsAsStringArray(obj: any): string[][] {
     } else if (typeof obj[key] === 'object') {
       getPathsAsStringArray(obj[key]).map((p) => {
         paths.push([key, ...p]);
-      })
+      });
     }
-  })
+  });
   return paths;
 }
 
